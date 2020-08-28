@@ -1,0 +1,16 @@
+
+g
+java:S1192*"JDefine a constant instead of duplicating this literal "articulos" 3 times.(õÓ¬ø8Ô¦·›Ã.
+U	java:S106("9Replace this use of System.out or System.err by a logger.(£²à“8Ô¦·›Ã.
+U	java:S1061"9Replace this use of System.out or System.err by a logger.(¤—Àß8…ê”œÃ.
+j
+java:S1128"HRemove this unused import 'net.serenitybdd.screenplay.conditions.Check'.(§ÄÕŒøÿÿÿÿ8Ô¦·›Ã.
+m
+java:S1301&"KReplace this "switch" statement by "if" statements to increase readability.(ª¨Á’ıÿÿÿÿ8Ô¦·›Ã.
+o	java:S100@"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¼®’Ûşÿÿÿÿ8…ê”œÃ.
+U	java:S106:"9Replace this use of System.out or System.err by a logger.(²¦ı8…ê”œÃ.
+C	java:S131&""Add a default case to this switch.(ª¨Á’ıÿÿÿÿ8Ô¦·›Ã.
+U	java:S106<"9Replace this use of System.out or System.err by a logger.(ÉÈÏ’8…ê”œÃ.
+Z	java:S106""9Replace this use of System.out or System.err by a logger.(Â°Ğ†øÿÿÿÿ8Ô¦·›Ã.
+K
+java:S1128	".Remove this unused import 'java.util.Objects'.(¼¸õ›8Ô¦·›Ã.

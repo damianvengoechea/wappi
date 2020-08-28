@@ -1,0 +1,10 @@
+
+Z	java:S106"9Replace this use of System.out or System.err by a logger.(½ãÃşúÿÿÿÿ8øÊ˜“Ã.
+U	java:S106"9Replace this use of System.out or System.err by a logger.(ƒï¼8ºĞí‘Ã.
+{
+java:S2293"YReplace the type specification in this constructor call with the diamond operator ("<>").(·Î¨şÿÿÿÿ8ååµ’Ã.
+e
+java:S1128"CRemove this unused import 'com.wappi.user_interfaces.PaginaInicio'.(â–½–ÿÿÿÿÿ8öêÃ.
+q
+java:S1104"TMake usoCupon a static final constant or non-public and provide accessors if needed.(Ûáë±8ÖÑöÃ.
+U	java:S106"9Replace this use of System.out or System.err by a logger.(Ğšé­8Ï¡ğ’Ã.
