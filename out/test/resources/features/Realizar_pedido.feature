@@ -11,42 +11,41 @@ Feature: Realizar una orden con y sin cupon de bienvenida
 
     Examples:
       | usuario   | contrasenia |
-      | tester123 | 12345678    |
+      | tester2 | 12345678    |
 
   @RealizarPedidoCompletoSinCupon
-  Scenario Outline: Realizar pedido sin cupon
+  Scenario: Realizar pedido sin cupon
     Given Damian ingresa a la pagina de wappi con <usuario> <contrasenia>
     When selecciona los articulos
       | articulos         | cupon |
       | Aceite de Girasol | No    |
       | Pan tajado        | No    |
-      | Aceite de Girasol | No    |
+      | Jamón Premium     | No    |
     Then en la opcion de mis pedidos validamo el ultimo articulo seleccionado
 
     Examples:
       | usuario   | contrasenia |
-      | tester123 | 12345678    |
+      | tester3 | 12345678    |
 
   @RealizarPedidoCompletoConCupon
   Scenario Outline: Realizar pedido con cupon
-    Given Damian ingresa a la pagina de wappi con <usuario> <contrasenia>
+  #  Given Damian ingresa a la pagina de wappi con <usuario> <contrasenia>
     When optiene el cupon
     And selecciona los articulos
       | articulos         | cupon |
       | Jamón Premium     | Si    |
-      | Pan tajado        | Si    |
-      | Aceite de Girasol | No    |
+      | Pan tajado        | No    |
+      | Aceite de Girasol | Si    |
       | Jamón Premium     | No    |
-      | Aceite de Girasol | No    |
     Then se vera reflejado en mis pedidos el uso del cupon en Si
 
     Examples:
       | usuario   | contrasenia |
-      | tester321 | 12345678    |
+      | tester4 | 12345678    |
 
   @VerificarValidezCupon
   Scenario Outline: Realizar pedido usando el cupon mas de 2 veces
-    Given Damian ingresa a la pagina de wappi con <usuario> <contrasenia>
+   # Given Damian ingresa a la pagina de wappi con <usuario> <contrasenia>
     When optiene el cupon
     And usa el cupon mas de dos veces
       | articulos         | cupon |
@@ -58,4 +57,4 @@ Feature: Realizar una orden con y sin cupon de bienvenida
 
     Examples:
       | usuario   | contrasenia |
-      | tester321 | 12345678    |
+      | tester5 | 12345678    |

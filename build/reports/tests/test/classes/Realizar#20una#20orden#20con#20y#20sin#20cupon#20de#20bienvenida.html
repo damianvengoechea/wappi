@@ -23,7 +23,7 @@
 <tr>
 <td>
 <div class="infoBox" id="tests">
-<div class="counter">1</div>
+<div class="counter">4</div>
 <p>tests</p>
 </div>
 </td>
@@ -41,7 +41,7 @@
 </td>
 <td>
 <div class="infoBox" id="duration">
-<div class="counter">24.740s</div>
+<div class="counter">2m11.72s</div>
 <p>duration</p>
 </div>
 </td>
@@ -78,8 +78,23 @@
 </tr>
 </thead>
 <tr>
+<td class="success">Realizar pedido con cupon</td>
+<td class="success">41.683s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
 <td class="success">Realizar pedido sin cupon</td>
-<td class="success">24.740s</td>
+<td class="success">25.381s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">Realizar pedido usando el cupon mas de 2 veces</td>
+<td class="success">22.250s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">Validar modal del pedido</td>
+<td class="success">42.409s</td>
 <td class="success">passed</td>
 </tr>
 </table>
@@ -87,69 +102,113 @@
 <div id="tab1" class="tab">
 <h2>Standard error</h2>
 <span class="code">
-<pre>1602 [Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - STARTING STEP Given Damian ingresa a la pagina de wappi con tester3 12345678
-2021 [Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - STARTING STEP Damian abrir navegador
-2071 [Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - STARTING STEP Damian opens the Pagina iniciar sesion
-ago 28, 2020 5:09:49 PM org.openqa.selenium.remote.DesiredCapabilities chrome
+<pre>5654 [Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - STARTING STEP Given Damian ingresa a la pagina de wappi con tester2 12345678
+7301 [Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - STARTING STEP Damian abrir navegador
+7471 [Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - STARTING STEP Damian opens the Pagina iniciar sesion
+ago 29, 2020 3:49:22 PM org.openqa.selenium.remote.DesiredCapabilities chrome
 INFORMACIÓN: Using `new ChromeOptions()` is preferred to `DesiredCapabilities.chrome()`
-2956 [Test worker] INFO net.serenitybdd.core.webdriver.driverproviders.ProvideNewDriver - Instantiating driver
-2960 [Test worker] INFO net.serenitybdd.core.webdriver.driverproviders.ProvideNewDriver - Driver capabilities: Capabilities {acceptInsecureCerts: false, browserName: chrome, chrome.switches: --disk-cache-dir=null, --in..., goog:chromeOptions: {args: [--disk-cache-dir=null, --incognito, --disable-download-notifica..., --start-maximized, --test-type, --ignore-certificate-errors, --allow-running-insecure-co..., --disable-translate, --always-authorize-plugins, --disable-extensions, --enable-automation, --test-type], extensions: []}, loggingPrefs: org.openqa.selenium.logging..., platform: ANY, version: }
-Starting ChromeDriver 2.39.562718 (9a2698cba08cf5a471a29d30c8b3e12becabb0e9) on port 27670
+11456 [Test worker] INFO net.serenitybdd.core.webdriver.driverproviders.ProvideNewDriver - Instantiating driver
+11463 [Test worker] INFO net.serenitybdd.core.webdriver.driverproviders.ProvideNewDriver - Driver capabilities: Capabilities {acceptInsecureCerts: false, browserName: chrome, chrome.switches: --disk-cache-dir=null, --in..., goog:chromeOptions: {args: [--disk-cache-dir=null, --incognito, --disable-download-notifica..., --start-maximized, --test-type, --ignore-certificate-errors, --allow-running-insecure-co..., --disable-translate, --always-authorize-plugins, --disable-extensions, --enable-automation, --test-type], extensions: []}, loggingPrefs: org.openqa.selenium.logging..., platform: ANY, version: }
+Starting ChromeDriver 2.39.562718 (9a2698cba08cf5a471a29d30c8b3e12becabb0e9) on port 44435
 Only local connections are allowed.
-[1598652595.937][WARNING]: Timed out connecting to Chrome, retrying...
-ago 28, 2020 5:09:57 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+[1598734178.745][WARNING]: Timed out connecting to Chrome, retrying...
+ago 29, 2020 3:49:41 PM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFORMACIÓN: Detected dialect: OSS
-13688 [Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - FINISHING STEP
-13694 [Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - FINISHING STEP
-14351 [Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - STARTING STEP Damian iniciar sesion
-14385 [Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - STARTING STEP Damian enters 'tester3' into Campo usuario
-14990 [Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - FINISHING STEP
-14995 [Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - STARTING STEP Damian enters '12345678' into Campo contraseÃ±a
-15437 [Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - FINISHING STEP
-15443 [Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - STARTING STEP Damian clicks on Boton ingresar
-15827 [Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - FINISHING STEP
-16199 [Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - FINISHING STEP
-16202 [Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - FINISHING STEP
-16204 [Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - STARTING STEP When selecciona los articulos
+33650 [Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - FINISHING STEP
+33658 [Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - FINISHING STEP
+34654 [Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - STARTING STEP Damian iniciar sesion
+34802 [Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - STARTING STEP Damian enters 'tester2' into Campo usuario
+37043 [Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - FINISHING STEP
+37058 [Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - STARTING STEP Damian enters '12345678' into Campo contraseÃ±a
+38161 [Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - FINISHING STEP
+38167 [Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - STARTING STEP Damian clicks on Boton ingresar
+39168 [Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - FINISHING STEP
+39682 [Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - FINISHING STEP
+39687 [Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - FINISHING STEP
+39690 [Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - STARTING STEP When selecciona el articulo Jamón Premium
+39708 [Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - STARTING STEP Damian seleccionar articulo
+39736 [Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - STARTING STEP Damian clicks on Boton pedir articulos
+40591 [Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - FINISHING STEP
+41049 [Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - FINISHING STEP
+41058 [Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - FINISHING STEP
+41072 [Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - STARTING STEP Then el precio del articulo del modal debera ser $14,000.00
+41627 [Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - STARTING STEP Then validar modal should be '$14,000.00'
+41784 [Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - FINISHING STEP
+41786 [Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - FINISHING STEP
+41789 [Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - FINISHING STEP
+47861 [Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - ?[92m
+        __    _____ _____ ____ _____   ____   _    ____  ____  _____ ____  
+  _     \ \  |_   _| ____/ ___|_   _| |  _ \ / \  / ___|/ ___|| ____|  _ \ 
+ (_)_____| |   | | |  _| \___ \ | |   | |_) / _ \ \___ \\___ \|  _| | | | |
+  _|_____| |   | | | |___ ___) || |   |  __/ ___ \ ___) |___) | |___| |_| |
+ (_)     | |   |_| |_____|____/ |_|   |_| /_/   \_\____/|____/|_____|____/ 
+        /_/                                                                
+
+TEST PASSED: Validar modal del pedido
+----------------------------------------------------------------------------?[0m
+47903 [Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - STARTING STEP Given Damian ingresa a la pagina de wappi con tester3 12345678
+47928 [Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - STARTING STEP Damian abrir navegador
+47932 [Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - STARTING STEP Damian opens the Pagina iniciar sesion
+ago 29, 2020 3:50:02 PM org.openqa.selenium.remote.DesiredCapabilities chrome
+INFORMACIÓN: Using `new ChromeOptions()` is preferred to `DesiredCapabilities.chrome()`
+48844 [Test worker] INFO net.serenitybdd.core.webdriver.driverproviders.ProvideNewDriver - Instantiating driver
+48858 [Test worker] INFO net.serenitybdd.core.webdriver.driverproviders.ProvideNewDriver - Driver capabilities: Capabilities {acceptInsecureCerts: false, browserName: chrome, chrome.switches: --disk-cache-dir=null, --in..., goog:chromeOptions: {args: [--disk-cache-dir=null, --incognito, --disable-download-notifica..., --start-maximized, --test-type, --ignore-certificate-errors, --allow-running-insecure-co..., --disable-translate, --always-authorize-plugins, --disable-extensions, --enable-automation, --test-type], extensions: []}, loggingPrefs: org.openqa.selenium.logging..., platform: ANY, version: }
+Starting ChromeDriver 2.39.562718 (9a2698cba08cf5a471a29d30c8b3e12becabb0e9) on port 5744
+Only local connections are allowed.
+[1598734207.613][WARNING]: Timed out connecting to Chrome, retrying...
+ago 29, 2020 3:50:09 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFORMACIÓN: Detected dialect: OSS
+58795 [Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - FINISHING STEP
+58798 [Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - FINISHING STEP
+59375 [Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - STARTING STEP Damian iniciar sesion
+59387 [Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - STARTING STEP Damian enters 'tester3' into Campo usuario
+60213 [Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - FINISHING STEP
+60219 [Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - STARTING STEP Damian enters '12345678' into Campo contraseÃ±a
+60829 [Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - FINISHING STEP
+60834 [Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - STARTING STEP Damian clicks on Boton ingresar
+61278 [Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - FINISHING STEP
+61805 [Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - FINISHING STEP
+61808 [Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - FINISHING STEP
+61811 [Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - STARTING STEP When selecciona los articulos
 | articulos | cupon |
 | Aceite de Girasol | No |
 | Pan tajado | No |
 | Jamón Premium | No |
-16220 [Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - STARTING STEP Damian seleccionar articulos
-ago 28, 2020 5:10:03 PM com.wappi.tasks.SeleccionarArticulos performAs
+61829 [Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - STARTING STEP Damian seleccionar articulos
+ago 29, 2020 3:50:16 PM com.wappi.tasks.SeleccionarArticulos performAs
 INFORMACIÓN: TamaÃ±o de la lista de articulos--&gt; 3
-16252 [Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - STARTING STEP Damian clicks on Boton pedir articulos
-16646 [Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - FINISHING STEP
-16651 [Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - STARTING STEP Damian clicks on Precio del modal
-16951 [Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - FINISHING STEP
-18992 [Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - STARTING STEP Damian clicks on Cerrar el modal de confirmacion de pedido
-19295 [Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - FINISHING STEP
-19307 [Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - STARTING STEP Damian clicks on Boton pedir articulos
-19507 [Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - FINISHING STEP
-19511 [Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - STARTING STEP Damian clicks on Precio del modal
-19759 [Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - FINISHING STEP
-21871 [Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - STARTING STEP Damian clicks on Cerrar el modal de confirmacion de pedido
-22048 [Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - FINISHING STEP
-22061 [Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - STARTING STEP Damian clicks on Boton pedir articulos
-22249 [Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - FINISHING STEP
-22254 [Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - STARTING STEP Damian clicks on Precio del modal
-22472 [Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - FINISHING STEP
-24546 [Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - STARTING STEP Damian clicks on Cerrar el modal de confirmacion de pedido
-24656 [Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - FINISHING STEP
-24661 [Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - STARTING STEP Damian clicks on Barra manu principal
-24837 [Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - FINISHING STEP
-ago 28, 2020 5:10:12 PM com.wappi.tasks.SeleccionarArticulos performAs
+61878 [Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - STARTING STEP Damian clicks on Boton pedir articulos
+62751 [Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - FINISHING STEP
+62755 [Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - STARTING STEP Damian clicks on Precio del modal
+63229 [Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - FINISHING STEP
+65357 [Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - STARTING STEP Damian clicks on Cerrar el modal de confirmacion de pedido
+65631 [Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - FINISHING STEP
+65650 [Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - STARTING STEP Damian clicks on Boton pedir articulos
+65899 [Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - FINISHING STEP
+65908 [Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - STARTING STEP Damian clicks on Precio del modal
+66195 [Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - FINISHING STEP
+68218 [Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - STARTING STEP Damian clicks on Cerrar el modal de confirmacion de pedido
+68446 [Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - FINISHING STEP
+68457 [Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - STARTING STEP Damian clicks on Boton pedir articulos
+68778 [Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - FINISHING STEP
+68781 [Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - STARTING STEP Damian clicks on Precio del modal
+69099 [Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - FINISHING STEP
+71122 [Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - STARTING STEP Damian clicks on Cerrar el modal de confirmacion de pedido
+71301 [Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - FINISHING STEP
+71308 [Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - STARTING STEP Damian clicks on Barra manu principal
+71575 [Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - FINISHING STEP
+ago 29, 2020 3:50:26 PM com.wappi.tasks.SeleccionarArticulos performAs
 INFORMACIÓN:  variable de sesion con el  ultimo articulo--&gt; Jamón Premium
-25131 [Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - FINISHING STEP
-25133 [Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - FINISHING STEP
-25135 [Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - STARTING STEP Then en la opcion de mis pedidos validamo el ultimo articulo seleccionado
-25373 [Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - STARTING STEP Then validar mis pedidos should be 'Jam&amp;oacute;n Premium'
-ago 28, 2020 5:10:13 PM com.wappi.questions.ValidarMisPedidos answeredBy
+71889 [Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - FINISHING STEP
+71892 [Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - FINISHING STEP
+71895 [Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - STARTING STEP Then en la opcion de mis pedidos validamo el ultimo articulo seleccionado
+71901 [Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - STARTING STEP Then validar mis pedidos should be 'Jam&amp;oacute;n Premium'
+ago 29, 2020 3:50:26 PM com.wappi.questions.ValidarMisPedidos answeredBy
 INFORMACIÓN: Posicion que viene desde el feature: 3
-25420 [Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - FINISHING STEP
-25421 [Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - FINISHING STEP
-25423 [Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - FINISHING STEP
-26289 [Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - ?[92m
+71984 [Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - FINISHING STEP
+71987 [Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - FINISHING STEP
+71989 [Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - FINISHING STEP
+73278 [Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - ?[92m
         __    _____ _____ ____ _____   ____   _    ____  ____  _____ ____  
   _     \ \  |_   _| ____/ ___|_   _| |  _ \ / \  / ___|/ ___|| ____|  _ \ 
  (_)_____| |   | | |  _| \___ \ | |   | |_) / _ \ \___ \\___ \|  _| | | | |
@@ -158,6 +217,183 @@ INFORMACIÓN: Posicion que viene desde el feature: 3
         /_/                                                                
 
 TEST PASSED: Realizar pedido sin cupon
+----------------------------------------------------------------------------?[0m
+73314 [Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - STARTING STEP Given Damian ingresa a la pagina de wappi con tester4 12345678
+73326 [Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - STARTING STEP Damian abrir navegador
+73330 [Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - STARTING STEP Damian opens the Pagina iniciar sesion
+ago 29, 2020 3:50:27 PM org.openqa.selenium.remote.DesiredCapabilities chrome
+INFORMACIÓN: Using `new ChromeOptions()` is preferred to `DesiredCapabilities.chrome()`
+73707 [Test worker] INFO net.serenitybdd.core.webdriver.driverproviders.ProvideNewDriver - Instantiating driver
+73708 [Test worker] INFO net.serenitybdd.core.webdriver.driverproviders.ProvideNewDriver - Driver capabilities: Capabilities {acceptInsecureCerts: false, browserName: chrome, chrome.switches: --disk-cache-dir=null, --in..., goog:chromeOptions: {args: [--disk-cache-dir=null, --incognito, --disable-download-notifica..., --start-maximized, --test-type, --ignore-certificate-errors, --allow-running-insecure-co..., --disable-translate, --always-authorize-plugins, --disable-extensions, --enable-automation, --test-type], extensions: []}, loggingPrefs: org.openqa.selenium.logging..., platform: ANY, version: }
+Starting ChromeDriver 2.39.562718 (9a2698cba08cf5a471a29d30c8b3e12becabb0e9) on port 19610
+Only local connections are allowed.
+[1598734231.896][WARNING]: Timed out connecting to Chrome, retrying...
+ago 29, 2020 3:50:33 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFORMACIÓN: Detected dialect: OSS
+81716 [Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - FINISHING STEP
+81719 [Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - FINISHING STEP
+82220 [Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - STARTING STEP Damian iniciar sesion
+82227 [Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - STARTING STEP Damian enters 'tester4' into Campo usuario
+82567 [Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - FINISHING STEP
+82571 [Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - STARTING STEP Damian enters '12345678' into Campo contraseÃ±a
+82927 [Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - FINISHING STEP
+82930 [Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - STARTING STEP Damian clicks on Boton ingresar
+83263 [Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - FINISHING STEP
+83616 [Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - FINISHING STEP
+83619 [Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - FINISHING STEP
+83620 [Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - STARTING STEP When optiene el cupon
+83629 [Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - STARTING STEP Damian obtener cupon
+83643 [Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - STARTING STEP Damian clicks on Boton optener cupon
+83951 [Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - FINISHING STEP
+ago 29, 2020 3:50:38 PM com.wappi.tasks.ObtenerCupon performAs
+INFORMACIÓN: Este es el cupon obtenido --&gt;  DNIXlE4MPtkXcgM
+84163 [Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - STARTING STEP Damian clicks on Cupon que se genero
+84363 [Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - FINISHING STEP
+84369 [Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - STARTING STEP Damian clicks on Barra manu principal
+84578 [Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - FINISHING STEP
+84900 [Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - FINISHING STEP
+84903 [Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - FINISHING STEP
+84904 [Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - STARTING STEP And selecciona los articulos
+| articulos | cupon |
+| Jamón Premium | Si |
+| Pan tajado | No |
+| Aceite de Girasol | Si |
+| Jamón Premium | No |
+84910 [Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - STARTING STEP Damian seleccionar articulos
+ago 29, 2020 3:50:39 PM com.wappi.tasks.SeleccionarArticulos performAs
+INFORMACIÓN: TamaÃ±o de la lista de articulos--&gt; 4
+84919 [Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - STARTING STEP Damian clicks on Boton pedir articulos
+85159 [Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - FINISHING STEP
+85166 [Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - STARTING STEP Damian enters 'DNIXlE4MPtkXcgM' into Campo donde ingresamos cupon
+85644 [Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - FINISHING STEP
+85646 [Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - STARTING STEP Damian clicks on Precio del modal
+85901 [Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - FINISHING STEP
+95989 [Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - STARTING STEP Damian clicks on Cerrar el modal de confirmacion de pedido
+96183 [Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - FINISHING STEP
+96196 [Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - STARTING STEP Damian clicks on Boton pedir articulos
+96374 [Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - FINISHING STEP
+96377 [Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - STARTING STEP Damian clicks on Precio del modal
+96599 [Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - FINISHING STEP
+98655 [Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - STARTING STEP Damian clicks on Cerrar el modal de confirmacion de pedido
+98844 [Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - FINISHING STEP
+98853 [Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - STARTING STEP Damian clicks on Boton pedir articulos
+99135 [Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - FINISHING STEP
+99139 [Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - STARTING STEP Damian enters 'DNIXlE4MPtkXcgM' into Campo donde ingresamos cupon
+99979 [Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - FINISHING STEP
+99986 [Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - STARTING STEP Damian clicks on Precio del modal
+100241 [Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - FINISHING STEP
+110305 [Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - STARTING STEP Damian clicks on Cerrar el modal de confirmacion de pedido
+110511 [Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - FINISHING STEP
+110522 [Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - STARTING STEP Damian clicks on Boton pedir articulos
+110689 [Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - FINISHING STEP
+110691 [Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - STARTING STEP Damian clicks on Precio del modal
+110918 [Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - FINISHING STEP
+112986 [Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - STARTING STEP Damian clicks on Cerrar el modal de confirmacion de pedido
+113142 [Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - FINISHING STEP
+113148 [Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - STARTING STEP Damian clicks on Barra manu principal
+113484 [Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - FINISHING STEP
+ago 29, 2020 3:51:08 PM com.wappi.tasks.SeleccionarArticulos performAs
+INFORMACIÓN:  variable de sesion con el  ultimo articulo--&gt; Jamón Premium
+113838 [Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - FINISHING STEP
+113841 [Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - FINISHING STEP
+113844 [Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - STARTING STEP Then se vera reflejado en mis pedidos el uso del cupon en Si
+113851 [Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - STARTING STEP Then validar uso cupon should be 'Si'
+ago 29, 2020 3:51:08 PM com.wappi.questions.ValidarUsoCupon answeredBy
+INFORMACIÓN: posicion que viene de articulos  4
+ago 29, 2020 3:51:08 PM com.wappi.questions.ValidarUsoCupon answeredBy
+INFORMACIÓN:  Lista articulos uso de cupon [Si, No, Si, No]
+114095 [Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - FINISHING STEP
+114096 [Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - FINISHING STEP
+114098 [Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - FINISHING STEP
+114994 [Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - ?[92m
+        __    _____ _____ ____ _____   ____   _    ____  ____  _____ ____  
+  _     \ \  |_   _| ____/ ___|_   _| |  _ \ / \  / ___|/ ___|| ____|  _ \ 
+ (_)_____| |   | | |  _| \___ \ | |   | |_) / _ \ \___ \\___ \|  _| | | | |
+  _|_____| |   | | | |___ ___) || |   |  __/ ___ \ ___) |___) | |___| |_| |
+ (_)     | |   |_| |_____|____/ |_|   |_| /_/   \_\____/|____/|_____|____/ 
+        /_/                                                                
+
+TEST PASSED: Realizar pedido con cupon
+----------------------------------------------------------------------------?[0m
+115019 [Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - STARTING STEP Given Damian ingresa a la pagina de wappi con tester5 12345678
+115027 [Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - STARTING STEP Damian abrir navegador
+115035 [Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - STARTING STEP Damian opens the Pagina iniciar sesion
+ago 29, 2020 3:51:09 PM org.openqa.selenium.remote.DesiredCapabilities chrome
+INFORMACIÓN: Using `new ChromeOptions()` is preferred to `DesiredCapabilities.chrome()`
+115494 [Test worker] INFO net.serenitybdd.core.webdriver.driverproviders.ProvideNewDriver - Instantiating driver
+115494 [Test worker] INFO net.serenitybdd.core.webdriver.driverproviders.ProvideNewDriver - Driver capabilities: Capabilities {acceptInsecureCerts: false, browserName: chrome, chrome.switches: --disk-cache-dir=null, --in..., goog:chromeOptions: {args: [--disk-cache-dir=null, --incognito, --disable-download-notifica..., --start-maximized, --test-type, --ignore-certificate-errors, --allow-running-insecure-co..., --disable-translate, --always-authorize-plugins, --disable-extensions, --enable-automation, --test-type], extensions: []}, loggingPrefs: org.openqa.selenium.logging..., platform: ANY, version: }
+Starting ChromeDriver 2.39.562718 (9a2698cba08cf5a471a29d30c8b3e12becabb0e9) on port 12056
+Only local connections are allowed.
+[1598734274.038][WARNING]: Timed out connecting to Chrome, retrying...
+ago 29, 2020 3:51:16 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFORMACIÓN: Detected dialect: OSS
+124037 [Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - FINISHING STEP
+124038 [Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - FINISHING STEP
+124518 [Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - STARTING STEP Damian iniciar sesion
+124527 [Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - STARTING STEP Damian enters 'tester5' into Campo usuario
+124878 [Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - FINISHING STEP
+124882 [Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - STARTING STEP Damian enters '12345678' into Campo contraseÃ±a
+125336 [Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - FINISHING STEP
+125339 [Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - STARTING STEP Damian clicks on Boton ingresar
+125672 [Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - FINISHING STEP
+126027 [Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - FINISHING STEP
+126034 [Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - FINISHING STEP
+126035 [Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - STARTING STEP When optiene el cupon
+126040 [Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - STARTING STEP Damian obtener cupon
+126049 [Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - STARTING STEP Damian clicks on Boton optener cupon
+126359 [Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - FINISHING STEP
+ago 29, 2020 3:51:21 PM com.wappi.tasks.ObtenerCupon performAs
+INFORMACIÓN: Este es el cupon obtenido --&gt;  2gIh5hIeAkcGixr
+126622 [Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - STARTING STEP Damian clicks on Cupon que se genero
+126841 [Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - FINISHING STEP
+126844 [Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - STARTING STEP Damian clicks on Barra manu principal
+127148 [Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - FINISHING STEP
+127495 [Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - FINISHING STEP
+127499 [Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - FINISHING STEP
+127500 [Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - STARTING STEP And usa el cupon mas de dos veces
+| articulos | cupon |
+| Aceite de Girasol | Si |
+| Pan tajado | Si |
+| Aceite de Girasol | Si |
+127510 [Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - STARTING STEP Damian utilizar cupon
+127536 [Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - STARTING STEP Damian clicks on Boton pedir articulos
+127793 [Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - FINISHING STEP
+127800 [Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - STARTING STEP Damian enters '2gIh5hIeAkcGixr' into Campo donde ingresamos cupon
+128341 [Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - FINISHING STEP
+128343 [Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - STARTING STEP Damian clicks on Precio del modal
+128632 [Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - FINISHING STEP
+130698 [Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - STARTING STEP Damian clicks on Cerrar el modal de confirmacion de pedido
+130931 [Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - FINISHING STEP
+130944 [Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - STARTING STEP Damian clicks on Boton pedir articulos
+131165 [Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - FINISHING STEP
+131168 [Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - STARTING STEP Damian enters '2gIh5hIeAkcGixr' into Campo donde ingresamos cupon
+131823 [Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - FINISHING STEP
+131826 [Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - STARTING STEP Damian clicks on Precio del modal
+132117 [Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - FINISHING STEP
+134218 [Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - STARTING STEP Damian clicks on Cerrar el modal de confirmacion de pedido
+134490 [Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - FINISHING STEP
+134498 [Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - STARTING STEP Damian clicks on Boton pedir articulos
+134813 [Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - FINISHING STEP
+134818 [Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - STARTING STEP Damian enters '2gIh5hIeAkcGixr' into Campo donde ingresamos cupon
+135490 [Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - FINISHING STEP
+135493 [Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - STARTING STEP Damian clicks on Precio del modal
+135830 [Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - FINISHING STEP
+136274 [Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - FINISHING STEP
+136276 [Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - FINISHING STEP
+136277 [Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - STARTING STEP Then debera mostra el mensaje Cupón inválido en el modal
+136285 [Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - STARTING STEP Then uso max cupon should be 'Cup&amp;oacute;n inv&amp;aacute;lido'
+136287 [Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - FINISHING STEP
+136288 [Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - FINISHING STEP
+136290 [Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - FINISHING STEP
+137266 [Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - ?[92m
+        __    _____ _____ ____ _____   ____   _    ____  ____  _____ ____  
+  _     \ \  |_   _| ____/ ___|_   _| |  _ \ / \  / ___|/ ___|| ____|  _ \ 
+ (_)_____| |   | | |  _| \___ \ | |   | |_) / _ \ \___ \\___ \|  _| | | | |
+  _|_____| |   | | | |___ ___) || |   |  __/ ___ \ ___) |___) | |___| |_| |
+ (_)     | |   |_| |_____|____/ |_|   |_| /_/   \_\____/|____/|_____|____/ 
+        /_/                                                                
+
+TEST PASSED: Realizar pedido usando el cupon mas de 2 veces
 ----------------------------------------------------------------------------?[0m
 </pre>
 </span>
@@ -170,7 +406,7 @@ TEST PASSED: Realizar pedido sin cupon
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="http://www.gradle.org">Gradle 6.3</a> at 28/08/2020 05:10:16 PM</p>
+<a href="http://www.gradle.org">Gradle 6.3</a> at 29/08/2020 03:51:36 PM</p>
 </div>
 </div>
 </body>

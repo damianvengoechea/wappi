@@ -36,7 +36,7 @@ Feature: Realizar una orden con y sin cupon de bienvenida
       | Jamón Premium     | Si    |
       | Pan tajado        | No    |
       | Aceite de Girasol | Si    |
-      | Jamón Premium     | Si    |
+      | Jamón Premium     | No    |
     Then se vera reflejado en mis pedidos el uso del cupon en Si
 
     Examples:

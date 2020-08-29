@@ -9,6 +9,5 @@ import org.junit.runner.RunWith;
 @CucumberOptions(
     features = "src/test/resources/features/Realizar_pedido.feature",
     glue = "com/wappi/stepdefinitions",
-    tags = "@RealizarPedidoCompletoSinCupon",
     snippets = SnippetType.CAMELCASE)
 public class RealizarPedido {}

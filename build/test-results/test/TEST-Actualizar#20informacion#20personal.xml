@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Actualizar informacion personal" tests="1" skipped="0" failures="0" errors="0" timestamp="2020-08-29T20:49:20" hostname="3RO-PQVIS8FDX5L" time="48.585">
+  <properties/>
+  <testcase name="Actualizar informacion personal" classname="Actualizar informacion personal" time="48.585"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[5524 [Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - STARTING STEP Given Damian ingresa a la pagina de wappi con prueba123 12345678
+8372 [Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - STARTING STEP Damian abrir navegador
+8522 [Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - STARTING STEP Damian opens the Pagina iniciar sesion
+ago 29, 2020 3:49:24 PM org.openqa.selenium.remote.DesiredCapabilities chrome
+INFORMACIÓN: Using `new ChromeOptions()` is preferred to `DesiredCapabilities.chrome()`
+11664 [Test worker] INFO net.serenitybdd.core.webdriver.driverproviders.ProvideNewDriver - Instantiating driver
+11696 [Test worker] INFO net.serenitybdd.core.webdriver.driverproviders.ProvideNewDriver - Driver capabilities: Capabilities {acceptInsecureCerts: false, browserName: chrome, chrome.switches: --disk-cache-dir=null, --in..., goog:chromeOptions: {args: [--disk-cache-dir=null, --incognito, --disable-download-notifica..., --start-maximized, --test-type, --ignore-certificate-errors, --allow-running-insecure-co..., --disable-translate, --always-authorize-plugins, --disable-extensions, --enable-automation, --test-type], extensions: []}, loggingPrefs: org.openqa.selenium.logging..., platform: ANY, version: }
+Starting ChromeDriver 2.39.562718 (9a2698cba08cf5a471a29d30c8b3e12becabb0e9) on port 38711
+Only local connections are allowed.
+[1598734178.857][WARNING]: Timed out connecting to Chrome, retrying...
+ago 29, 2020 3:49:40 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFORMACIÓN: Detected dialect: OSS
+34031 [Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - FINISHING STEP
+34038 [Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - FINISHING STEP
+35551 [Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - STARTING STEP Damian iniciar sesion
+35680 [Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - STARTING STEP Damian enters 'prueba123' into Campo usuario
+38163 [Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - FINISHING STEP
+38170 [Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - STARTING STEP Damian enters '12345678' into Campo contraseÃ±a
+40198 [Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - FINISHING STEP
+40204 [Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - STARTING STEP Damian clicks on Boton ingresar
+41563 [Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - FINISHING STEP
+41996 [Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - FINISHING STEP
+41999 [Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - FINISHING STEP
+42002 [Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - STARTING STEP When diligencia el formulario
+| imagen | nombre | apellido | fecha_nacimiento | pais |
+| D:\wappi\src\test\resources\imagenes\imagen.jpeg | damian | vengoechea | 11/11/1983 | colombia |
+42033 [Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - STARTING STEP Damian seleccionar opcion menu
+42056 [Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - STARTING STEP Damian clicks on Barra manu principal
+42938 [Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - FINISHING STEP
+43429 [Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - FINISHING STEP
+43434 [Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - STARTING STEP Damian diligenciar formulario
+43567 [Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - STARTING STEP Damian enters 'damian' into Campos del formulario
+44304 [Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - FINISHING STEP
+44307 [Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - STARTING STEP Damian enters 'vengoechea' into Campos del formulario
+45524 [Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - FINISHING STEP
+45529 [Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - STARTING STEP Damian enters '11/11/1983' into Campos del formulario
+46105 [Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - FINISHING STEP
+46113 [Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - STARTING STEP Damian clicks on Seleccionar el pais 
+46488 [Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - FINISHING STEP
+46494 [Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - STARTING STEP Damian types 'ARROW_DOWN' in Opcion de genero
+46643 [Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - FINISHING STEP
+46649 [Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - STARTING STEP Damian clicks on Opcion de genero
+46991 [Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - FINISHING STEP
+46996 [Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - STARTING STEP Damian clicks on Boton guardar datos
+47488 [Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - FINISHING STEP
+47490 [Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - FINISHING STEP
+47493 [Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - FINISHING STEP
+47495 [Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - STARTING STEP Then se actualiza la informacion y debe mostrar el mensaje Tu información se guardó correctamente
+48052 [Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - STARTING STEP Then confirmar actualizacion should be 'Tu informaci&oacute;n se guard&oacute; correctamente'
+48169 [Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - FINISHING STEP
+48172 [Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - FINISHING STEP
+48175 [Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - FINISHING STEP
+53937 [Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - ?[92m
+        __    _____ _____ ____ _____   ____   _    ____  ____  _____ ____  
+  _     \ \  |_   _| ____/ ___|_   _| |  _ \ / \  / ___|/ ___|| ____|  _ \ 
+ (_)_____| |   | | |  _| \___ \ | |   | |_) / _ \ \___ \\___ \|  _| | | | |
+  _|_____| |   | | | |___ ___) || |   |  __/ ___ \ ___) |___) | |___| |_| |
+ (_)     | |   |_| |_____|____/ |_|   |_| /_/   \_\____/|____/|_____|____/ 
+        /_/                                                                
+
+TEST PASSED: Actualizar informacion personal
+----------------------------------------------------------------------------?[0m
+]]></system-err>
+</testsuite>

@@ -6,8 +6,8 @@ import static net.serenitybdd.screenplay.actors.OnStage.theActorInTheSpotlight;
 import static org.hamcrest.Matchers.equalTo;
 
 import com.wappi.interactions.AbrirNavegador;
+import com.wappi.interactions.DiligenciarFormulario;
 import com.wappi.questions.ConfirmarActualizacion;
-import com.wappi.tasks.DiligenciarFormulario;
 import com.wappi.tasks.IniciarSesion;
 import com.wappi.tasks.SeleccionarOpcionMenu;
 import cucumber.api.java.Before;

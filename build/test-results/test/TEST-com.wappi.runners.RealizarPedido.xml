@@ -2,12 +2,12 @@
 <testsuite name="com.wappi.runners.RealizarPedido" tests="0" skipped="0" failures="0" errors="0" timestamp="1970-01-01T00:00:00" hostname="3RO-PQVIS8FDX5L" time="0.0">
   <properties/>
   <system-out><![CDATA[
-1 Scenarios (?[32m1 passed?[0m)
-3 Steps (?[32m3 passed?[0m)
-0m25,180s
+4 Scenarios (?[32m4 passed?[0m)
+14 Steps (?[32m14 passed?[0m)
+2m13,567s
 
 ]]></system-out>
-  <system-err><![CDATA[1318 [Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - ?[96m
+  <system-err><![CDATA[4560 [Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - ?[96m
 
 -------------------------------------------------------------------------------------
      _______. _______ .______       _______ .__   __.  __  .___________.____    ____ 
@@ -24,8 +24,19 @@
  Learn Serenity BDD online at http://serenity-dojo.com                               
 -------------------------------------------------------------------------------------
 ?[0m
-1341 [Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - Test Suite Started: Realizar una orden con y sin cupon de bienvenida
-1428 [Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - 
+4641 [Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - Test Suite Started: Realizar una orden con y sin cupon de bienvenida
+4970 [Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - 
+ _____ _____ ____ _____   ____ _____  _    ____ _____ _____ ____  
+|_   _| ____/ ___|_   _| / ___|_   _|/ \  |  _ \_   _| ____|  _ \ 
+  | | |  _| \___ \ | |   \___ \ | | / _ \ | |_) || | |  _| | | | |
+  | | | |___ ___) || |    ___) || |/ ___ \|  _ < | | | |___| |_| |
+  |_| |_____|____/ |_|   |____/ |_/_/   \_\_| \_\|_| |_____|____/ 
+                                                                  
+
+TEST STARTED: Validar modal del pedido
+-------------------------------------------------------------------(realizar-una-orden-con-y-sin-cupon-de-bienvenida;validar-modal-del-pedido)
+5457 [Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - STARTING STEP Example: {usuario=tester2, contrasenia=12345678}
+47886 [Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - 
  _____ _____ ____ _____   ____ _____  _    ____ _____ _____ ____  
 |_   _| ____/ ___|_   _| / ___|_   _|/ \  |  _ \_   _| ____|  _ \ 
   | | |  _| \___ \ | |   \___ \ | | / _ \ | |_) || | |  _| | | | |
@@ -35,7 +46,32 @@
 
 TEST STARTED: Realizar pedido sin cupon
 -------------------------------------------------------------------(realizar-una-orden-con-y-sin-cupon-de-bienvenida;realizar-pedido-sin-cupon)
-1548 [Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - STARTING STEP Example: {usuario=tester3, contrasenia=12345678}
-26741 [pool-2-thread-1] INFO net.thucydides.core.requirements.PackageRequirementsTagProvider - Loading requirements from package requirements at: net.thucydides.showcase.cucumber.junit
+47896 [Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - STARTING STEP Example: {usuario=tester3, contrasenia=12345678}
+73288 [Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - 
+ _____ _____ ____ _____   ____ _____  _    ____ _____ _____ ____  
+|_   _| ____/ ___|_   _| / ___|_   _|/ \  |  _ \_   _| ____|  _ \ 
+  | | |  _| \___ \ | |   \___ \ | | / _ \ | |_) || | |  _| | | | |
+  | | | |___ ___) || |    ___) || |/ ___ \|  _ < | | | |___| |_| |
+  |_| |_____|____/ |_|   |____/ |_/_/   \_\_| \_\|_| |_____|____/ 
+                                                                  
+
+TEST STARTED: Realizar pedido con cupon
+-------------------------------------------------------------------(realizar-una-orden-con-y-sin-cupon-de-bienvenida;realizar-pedido-con-cupon)
+73310 [Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - STARTING STEP Example: {usuario=tester4, contrasenia=12345678}
+115005 [Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - 
+ _____ _____ ____ _____   ____ _____  _    ____ _____ _____ ____  
+|_   _| ____/ ___|_   _| / ___|_   _|/ \  |  _ \_   _| ____|  _ \ 
+  | | |  _| \___ \ | |   \___ \ | | / _ \ | |_) || | |  _| | | | |
+  | | | |___ ___) || |    ___) || |/ ___ \|  _ < | | | |___| |_| |
+  |_| |_____|____/ |_|   |____/ |_/_/   \_\_| \_\|_| |_____|____/ 
+                                                                  
+
+TEST STARTED: Realizar pedido usando el cupon mas de 2 veces
+-------------------------------------------------------------------(realizar-una-orden-con-y-sin-cupon-de-bienvenida;realizar-pedido-usando-el-cupon-mas-de-2-veces)
+115015 [Test worker] INFO net.thucydides.core.steps.ConsoleLoggingListener - STARTING STEP Example: {usuario=tester5, contrasenia=12345678}
+137676 [pool-2-thread-2] INFO net.thucydides.core.requirements.PackageRequirementsTagProvider - Loading requirements from package requirements at: net.thucydides.showcase.cucumber.junit
+137676 [pool-2-thread-1] INFO net.thucydides.core.requirements.PackageRequirementsTagProvider - Loading requirements from package requirements at: net.thucydides.showcase.cucumber.junit
+137677 [pool-2-thread-4] INFO net.thucydides.core.requirements.PackageRequirementsTagProvider - Loading requirements from package requirements at: net.thucydides.showcase.cucumber.junit
+137677 [pool-2-thread-3] INFO net.thucydides.core.requirements.PackageRequirementsTagProvider - Loading requirements from package requirements at: net.thucydides.showcase.cucumber.junit
 ]]></system-err>
 </testsuite>
