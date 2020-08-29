@@ -1,5 +1,0 @@
-"Story","Title","Result","Date","Stability","Duration (s)"
-"Realizar una orden con y sin cupon de bienvenida","Validar modal del pedido","SUCCESS","2020-08-29T15:49:19.534-05:00[America/Bogota]","0.0","42.89"
-"Realizar una orden con y sin cupon de bienvenida","Realizar pedido sin cupon","SUCCESS","2020-08-29T15:50:02.463-05:00[America/Bogota]","0.0","25.39"
-"Realizar una orden con y sin cupon de bienvenida","Realizar pedido con cupon","SUCCESS","2020-08-29T15:50:27.866-05:00[America/Bogota]","0.0","41.71"
-"Realizar una orden con y sin cupon de bienvenida","Realizar pedido usando el cupon mas de 2 veces","SUCCESS","2020-08-29T15:51:09.582-05:00[America/Bogota]","0.0","22.26"
